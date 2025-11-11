@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking - TravelIndia</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f4f4;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.15);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        label {
+            font-weight: bold;
+            margin-top: 12px;
+            display: block;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 6px;
+            border-radius: 6px;
+            border: 1px solid #aaa;
+            outline: none;
+            transition: 0.2s;
+        }
+
+        input:focus, select:focus {
+            border-color: #007bff;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #007bff;
+            color: white;
+            border: none;
+            margin-top: 20px;
+            font-size: 16px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #0056cc;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+        <h2>Hotel Booking Form</h2>
+
+        <form>
+
+            <label>Full Name</label>
+            <input type="text" required>
+
+            <label>Email</label>
+            <input type="email" required>
+
+            <label>Phone</label>
+            <input type="text" required>
+
+            <label>Hotel Name</label>
+            <input type="text" required placeholder="Enter hotel name">
+
+            <label>Destination / City</label>
+            <input type="text" required>
+
+            <label>Check-in Date</label>
+            <input type="date" required>
+
+            <label>Check-out Date</label>
+            <input type="date" required>
+
+            <label>No. of Guests</label>
+            <input type="number" required>
+
+            <label>Room Type</label>
+            <select required>
+                <option>AC Room</option>
+                <option>Non AC Room</option>
+                <option>Deluxe Room</option>
+                <option>Suite Room</option>
+            </select>
+
+            <label>Payment Method</label>
+            <select required>
+                <option>UPI</option>
+                <option>Credit/Debit Card</option>
+                <option>Cash on Arrival</option>
+            </select>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </div>
+
+</body>
+</html>
